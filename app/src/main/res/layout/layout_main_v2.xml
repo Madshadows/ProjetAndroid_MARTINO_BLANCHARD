@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextSaisieNomLivre"
+        android:id="@+id/editZoneSaisie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
@@ -16,10 +16,10 @@
         android:text="@string/txtviewZoneSaisie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtviewZoneSaisie" />
+        app:layout_constraintTop_toBottomOf="@+id/txtvNomLivre" />
 
     <TextView
-        android:id="@+id/txtviewZoneSaisie"
+        android:id="@+id/txtvNomLivre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
@@ -30,31 +30,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/rvAffichage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="65dp"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:layout_marginTop="66dp"
+        app:layout_constraintStart_toStartOf="@+id/btnAffichage"
+        app:layout_constraintTop_toBottomOf="@+id/btnAffichage" />
 
     <Button
-        android:id="@+id/idButtonValidation"
+        android:id="@+id/btnValidation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
         android:text="@string/buttonValidation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSaisieNomLivre" />
+        app:layout_constraintTop_toBottomOf="@+id/editZoneSaisie" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnAffichage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/buttonLectures"
-        app:layout_constraintStart_toStartOf="@+id/idButtonValidation"
-        app:layout_constraintTop_toBottomOf="@+id/idButtonValidation" />
+        app:layout_constraintStart_toStartOf="@+id/btnValidation"
+        app:layout_constraintTop_toBottomOf="@+id/btnValidation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
