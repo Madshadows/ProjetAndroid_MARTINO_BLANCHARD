@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProjetAndroid_MARTINO_BLANCHARD</string>
+    <string name="txtviewZoneSaisie">Zone Saisie</string>
+    <string name="txtviewAffiche">Nom livre</string>
+    <string name="edittextValue">Nom du livre</string>
+    <string name="buttonValidation">Validation</string>
+    <string name="buttonLectures">Lectures</string>
 </resources>
