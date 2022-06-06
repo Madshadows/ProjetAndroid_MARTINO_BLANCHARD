@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,7 +20,7 @@ import java.util.stream.IntStream;
 
 public class MainActivityV1 extends AppCompatActivity {
     private List<Livre> lesLivres;
-    private TextView leTextView;
+    private TextView leTextView ;
     private TextInputEditText entrerLivre;
 
     @Override
@@ -30,9 +31,12 @@ public class MainActivityV1 extends AppCompatActivity {
         entrerLivre = findViewById(R.id.EntrerText);
         initListLivre();
 
+        LivreAdapter monLivreAdapter = new LivreAdapter(lesLivres);
+
         RecyclerView monRecyclerView
                 =findViewById(R.id.listeLivre);
-        //monRecyclerView.add
+        monRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     @SuppressLint("NewApi")
@@ -47,6 +51,8 @@ public class MainActivityV1 extends AppCompatActivity {
 
     public void onClickBtnValider(View view){
     lesLivres.add(new Livre(entrerLivre.getText().toString()));
+
+
         Toast.makeText(this, "ça marche", Toast.LENGTH_LONG).show();
     }
 }

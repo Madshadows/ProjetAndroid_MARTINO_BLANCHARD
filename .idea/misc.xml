@@ -3,12 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/cyril/OneDrive/Documents/Licence_pro_RGI/Android/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/activity_main_v1.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/cyril/OneDrive/Documents/Licence_pro_RGI/Android/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/activity_main_v2.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/cyril/OneDrive/Documents/Licence_pro_RGI/Android/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/layout_main_v2.xml" value="0.358695652173913" />
         <entry key="..\:/Users/vince/AndroidStudioProjects/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/activity_main.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/vince/AndroidStudioProjects/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/activity_mainV1.xml" value="0.358695652173913" />
         <entry key="..\:/Users/vince/AndroidStudioProjects/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/activity_main_v1.xml" value="0.25" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/layout_affiche_livre.xml" value="0.33" />
         <entry key="..\:/Users/vince/AndroidStudioProjects/ProjetAndroid_MARTINO_BLANCHARD/app/src/main/res/layout/layout_main_v2.xml" value="0.17603850050658562" />
       </map>
     </option>
