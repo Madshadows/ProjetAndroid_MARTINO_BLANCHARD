@@ -1,9 +1,11 @@
 package com.example.projetandroid_martino_blanchard;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -30,20 +32,21 @@ public class MainActivityV1 extends AppCompatActivity {
 
         RecyclerView monRecyclerView
                 =findViewById(R.id.listeLivre);
-        monRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //monRecyclerView.add
     }
 
+    @SuppressLint("NewApi")
     private void initListLivre() {
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             lesLivres= IntStream.range(1,100)
                     .mapToObj(
                             i -> {return  new Livre("l_"+i);}
                     ).collect(Collectors.toList());
-        }
+
     }
 
     public void onClickBtnValider(View view){
     lesLivres.add(new Livre(entrerLivre.getText().toString()));
+        Toast.makeText(this, "ça marche", Toast.LENGTH_LONG).show();
     }
 }
